@@ -8,4 +8,3 @@ for i in num_list:
 
 result = sum(mid_list)/cnt
 print(result)
-    
