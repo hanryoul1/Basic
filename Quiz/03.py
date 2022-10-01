@@ -28,12 +28,14 @@ Quiz) 사이트별로 비밀번호를 만들어 주는 프로그램을 작성하
 출력 결과 ) nav51!
 """
 
+# Solution_MY
 site = str(input())
 first = site[8:]
 second = first[:(first.index("."))]
 third = second[:3] + str(len(second)) + str(second.count('e')) + '!'
 print(third)
 
+# Solution
 url = "https://naver.com"
 my_str = url.replace("https://", "")
 my_str = my_str[:my_str.index(".")]
