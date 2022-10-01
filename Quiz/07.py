@@ -15,4 +15,7 @@ Quiz) 당신의 회사에서는 매주 1회 작성해야 하는 보고서가 있
 for i in range(1, 5):
 
     with open(f"{i}주차.txt", "w", encoding = "utf8") as company_file:
-        company_file.write(f"- {i}주차 주간보고 -\n부서 : \n이름 : \n업무 요약 : ")
+        company_file.write(f"- {i}주차 주간보고 - \
+            \n부서 : \
+            \n이름 : \
+            \n업무 요약 : ")
