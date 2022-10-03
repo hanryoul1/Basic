@@ -10,7 +10,7 @@ Quiz) 동네에 항상 대기 손님이 있는 맛있는 치킨집이 있습니�
         출력 메시지 : "재고가 소진되어 더 이상 주문을 받지 않습니다."
 """
 
-# 코드
+# Solution
 class SoldOutError(Exception):
     pass
 
