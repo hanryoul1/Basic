@@ -1,15 +1,13 @@
 n = int(input())
 cnt = 0
 
-if (n % 5) % 3 == 0:
-    cnt += (n / 5)
-    n = (n % 5)
-    cnt += (n / 3)
-
-elif (n % 3) == 0:
-    cnt += (n / 3)
+while n >= 0:
+    if n % 5 == 0:
+        cnt = cnt + (n // 5)
+        print(cnt)
+        break
+    n = n - 3
+    cnt = cnt + 1
 
 else:
-    cnt = -1
-
-print(cnt)
+    print(-1)
