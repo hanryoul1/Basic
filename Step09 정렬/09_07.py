@@ -6,7 +6,7 @@ for i in range(N):
     [x, y] = map(int, sys.stdin.readline().split())
     nums.append([x, y])
 
-nums = sorted(nums)
+nums.sort()
 
 for i in range(N):
     print(nums[i][0], nums[i][1])
