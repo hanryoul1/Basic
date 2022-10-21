@@ -10,8 +10,8 @@ for i in range(T):
     X = (W // Y) - 1
     
     if N % H == 0:
-        Y = N // H
-        X = H
+        Y = H
+        X = N // H
 
     print(f"{Y}0{X}")
 
@@ -30,4 +30,4 @@ for i in range(T):
         Y = H
         X = N // H
         
-    print("%d%02d"%(Y, X))
+    print("%d%02d"%(Y, X)) # -> print(f"{Y}0{X}")
