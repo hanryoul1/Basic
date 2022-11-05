@@ -2,20 +2,22 @@
 # EX) AAA, ABBA, ABABA 
 # def isPalindrome() : 문자열이 팰린드롬이면 1, 팰린드롬이 아니면 0 return
 
-import sys
-input = sys.stdin.readline
+def recursion(S, l, r):
+    global cnt
+    cnt += 1
+    if (l >= r):
+        return 1
+    elif (S[l] != S[r]):
+        return 0
+    else:
+        return recursion(S, l+1, r-1)
 
-T = int(input())
-result = 0
-cnt = 0
+def isPalindrome(S):
+    return recursion(S, 0, len(S)-1)
 
-for i in range(T):
-    S = input()
-
-    def isPalindrome(S):
-        for i in range(0, S(len)):
-            if S[i] == S[S(len)-1-i]:
-                result = 1
-            else:
-                result = 0
-        return result
+if __name__ == "__main__":
+    T = int(input())
+    for i in range(T):
+        cnt = 0
+        S = input()
+        print(isPalindrome(S), cnt)
