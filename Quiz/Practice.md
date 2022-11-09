@@ -1,4 +1,3 @@
-"""
 [02.py]
 <random 함수>
 random() : 0 ~ 10 미만의 임의의 값 생성
@@ -33,29 +32,27 @@ set = {}  // 중복, 순서 없음
 
 [10.py]
 <내장함수>
-# input : 사용자 입력을 받는 함수
-# dir : 어떤 객체를 넘겨줬을 때 그 객체가 어떤 변수와 함수를 가지고 있는 표시하는 함수
+input : 사용자 입력을 받는 함수
+dir : 어떤 객체를 넘겨줬을 때 그 객체가 어떤 변수와 함수를 가지고 있는 표시하는 함수
 
 <외장함수>
-# glob : 경로 내의 폴더 / 파일 목록 조회 (윈도우 dir)
+glob : 경로 내의 폴더 / 파일 목록 조회 (윈도우 dir)
 import glob
 print(glob.glob("*.py")) # 확장자가 py인 모든 파일
 
-# os : 운영체제에서 제공하는 기본 기능
+os : 운영체제에서 제공하는 기본 기능
 import os
 print(os.getcwd())
 
-# time : 시간 관련 함수
+time : 시간 관련 함수
 import time
 print(time.localtime())
 print(time.strftime("%y-%m-%d %H:%M:%S"))
 
-# datetime : 날짜 관련 함수
+datetime : 날짜 관련 함수
 import datetime
 print("오늘 날짜는 ", datetime.date.today())
 
 today = datetime.date.today() # 오늘 날짜 저장
 td = datetime.timedelta(days = 100) # 100일 뒤 날짜 저장
 print("우리가 만난지 100일은", today + td)
-
-"""
