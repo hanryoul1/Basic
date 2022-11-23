@@ -39,9 +39,49 @@ def print_value_by_key(dict, date):
 print_value_by_key(my_dict, "10/26")
 
 # 226.py
-# def print_5xn(string):
+def print_5xn(line):
+    chunk_num = int(len(line) / 5)
+
+    if len(line) % 5 == 0:
+        for x in range(chunk_num) :
+            print(line[x * 5: x * 5 + 5])
+    
+    else:
+        for x in range(chunk_num + 1) :
+            print(line[x * 5: x * 5 + 5])
+
+print_5xn("아이엠어보이유알어걸스")
 
 # 227.py
+def print_mxn(string, n):
+    chunk_num = len(string) // n
+
+    if len(string) % 3 == 0:
+        for y in range(chunk_num):
+            print(string[y * n: y * n + n])
+
+    else:
+        for y in range(chunk_num + 1):
+            print(string[y * n: y * n + n])
+            
+print_mxn("아이엠어보이유알어걸", 3)
+
 # 228.py
-# 229.py
-# 230.py
+def calc_monthly_salary(salary):
+    print(salary // 12)
+
+calc_monthly_salary(13000000)
+
+# 229.py (왼쪽: 100 / 오른쪽:200)
+def my_print (a, b) :
+    print("왼쪽:", a)
+    print("오른쪽:", b)
+
+my_print(a=100, b=200)
+
+# 230.py (왼쪽: 200 / 오른쪽:100)
+def my_print (a, b) :
+    print("왼쪽:", a)
+    print("오른쪽:", b)
+
+my_print(b=100, a=200)
