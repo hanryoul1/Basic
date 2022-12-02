@@ -14,4 +14,4 @@ class bike(Car):
         self.system = system
 
 bicycle = bike(2, 100, "시마노")
-bicycle.info() # 부모 클래스 Car의 def
+bicycle.info() # 부모 클래스 Car의 info()
